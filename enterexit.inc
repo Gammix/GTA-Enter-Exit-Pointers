@@ -52,18 +52,18 @@ enum EnterExitInfo
 	bool:E_movedup,
 	E_type
 }
-new gEnterExit[MAX_ENTER_EXITS][EnterExitInfo];
+static gEnterExit[MAX_ENTER_EXITS][EnterExitInfo];
 
 #if defined SCREEN_FADE
-new PlayerText:gFader;
-new gFadeLevel[MAX_PLAYERS];
-new gFadeTimer[MAX_PLAYERS];
-new gFadeType[MAX_PLAYERS];
-new gPlayerPoint[MAX_PLAYERS];
-new gFadeState[MAX_PLAYERS];
+static PlayerText:gFader;
+static gFadeLevel[MAX_PLAYERS];
+static gFadeTimer[MAX_PLAYERS];
+static gFadeType[MAX_PLAYERS];
+static gPlayerPoint[MAX_PLAYERS];
+static gFadeState[MAX_PLAYERS];
 #endif
 
-new gPlayerTimer[MAX_PLAYERS];
+static gPlayerTimer[MAX_PLAYERS];
 
 //Note: if you use this in a filterscript, please define "FILTERSCRIPT" in your script
 #if defined FILTERSCRIPT// if used in a filterscript
